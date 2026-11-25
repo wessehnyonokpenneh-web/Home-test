@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f6ef;
+            color: #26382d;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #355c45;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #26382d;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #c6a52e;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 65px 20px 40px;
+        }
+
+        .page-title h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .page-title h1 span {
+            color: #c6a52e;
+        }
+
+        .page-title p {
+            color: #66746a;
+            font-size: 17px;
+        }
+
+        .interests {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 18px;
+            transition: 0.3s;
+            border: 1px solid #e6e8df;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #355c45;
+        }
+
+        .card p {
+            line-height: 1.7;
+            color: #66746a;
+            font-size: 15px;
+        }
+
+        .quote {
+            margin: 40px 8%;
+            padding: 45px;
+            text-align: center;
+            background-color: #e9eee6;
+            border-radius: 20px;
+        }
+
+        .quote h2 {
+            margin-bottom: 15px;
+        }
+
+        .quote p {
+            font-size: 19px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #66746a;
+        }
+
+        @media (max-width: 900px) {
+            .interests {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .page-title h1 {
+                font-size: 36px;
+            }
+
+            .interests {
+                grid-template-columns: 1fr;
+            }
+
+            .quote {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">My World.</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="interests.html">My Interests</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Things I <span>Love</span></h1>
+        <p>A few things that make me happy and keep me inspired.</p>
+    </section>
+
+    <section class="interests">
+
+        <div class="card">
+            <div class="icon">⚽</div>
+            <h2>Football</h2>
+            <p>
+                I enjoy watching football and following my favorite players.
+                Lionel Messi is my favorite footballer, and I love the
+                excitement, skills, and competition in the game.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎬</div>
+            <h2>Movies & Series</h2>
+            <p>
+                I love watching movies and series, especially romance,
+                teen drama, and stories that keep me entertained and
+                emotionally connected to the characters.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎵</div>
+            <h2>Music</h2>
+            <p>
+                Music is something I enjoy in different moods.
+                I love listening to songs that make me feel happy,
+                relaxed, inspired, or connected to the moment.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h2>Reading & Learning</h2>
+            <p>
+                I enjoy learning new things, reading stories, exploring
+                interesting topics, and gaining knowledge that helps
+                me understand the world better.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h2>Fashion & Style</h2>
+            <p>
+                I enjoy expressing myself through fashion, hairstyles,
+                and different styles. I like exploring ideas that allow
+                me to be creative and express my personality.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚖️</div>
+            <h2>Law & My Future</h2>
+            <p>
+                One of my biggest dreams is to become a lawyer.
+                I am interested in justice, the law, and standing
+                up for people's rights. I hope to make a difference
+                in the future.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="quote">
+        <h2>My Favorite Color</h2>
+        <p>
+            Yellow reminds me of sunshine, happiness, warmth,
+            and positive energy. ☀️
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2026 My Personal Website. Made with love.
+    </footer>
+
+</body>
+</html>
